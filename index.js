@@ -55,8 +55,11 @@ console.log(`La propina de ${billTotal} es de ${tipAmount} euros`)
 
 // Generate a random integer between 1 and 10 (inclusive)
 
-numRandom = Math.round(Math.random() * 10)
+// numRandom = Math.round(Math.random() * 10)
+numRandom = Math.floor(Math.random() * 10) + 1 //Como siempre tira hacia abajo, nunca sacará un 10.
 
+// Math.floor():se queda con la parte entera de un número, por debajo.
+// Math.ceil():se queda con la parte entera de un número, por arriba.
 
 // Print the generated random number
 
